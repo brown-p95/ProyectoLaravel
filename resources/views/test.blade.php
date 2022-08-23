@@ -7,10 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <H1>tESTING usigin custom text</H1>
-    <h2><?php echo $msj ?></h2>
-    <h3>{{ $msj }}{{ $edad}}</h3>
-    <a href="/test">Contacto</a>
-    <a href="{{ route ('testpage') }}">Contacto (Ruta con nombre)</a>
+    <h1>Test resourcebundle_get_error_message</h1>
 </body>
 </html>
