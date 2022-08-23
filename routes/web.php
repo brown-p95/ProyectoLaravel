@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Test3Controller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TestController;
 
@@ -25,5 +26,7 @@ Route::get('/custom', function () {
 Route::get('/test', function () {
     return view('test');
 })->name('testpage');
+
+Route::get('/test3', [Test3Controller::class,'index']);
 
 Route::get('/t',[TestController::class,'test']);
