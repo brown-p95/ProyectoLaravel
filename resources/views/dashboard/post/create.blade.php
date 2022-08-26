@@ -9,11 +9,21 @@
 <body>
     <form action="{{ route('post.store') }}" method="post">
         @csrf
-        <label for=""> label<> 
         <h1>create post </h1>
-   
+        <label for=""> Titulo </label> 
+        <input type="text" name="title" > 
+
+        <label for=""> Slug </label> 
+        <input type="text" name="slug" >
+
+        <label for=""> Contenido </label> 
+        <textarea name="content" > </textarea >
+
+        <label for="">Descripcion</label> 
+        <textarea name="description" ></textarea >
+
         
-    <Button type="submit">Enviar</Button>
+<Button type="submit">Enviar</Button>
     </form>
 </body>
 </html>

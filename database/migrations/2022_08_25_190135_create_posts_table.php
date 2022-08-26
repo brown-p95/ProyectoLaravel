@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string("slug",255)->nullable();
             $table->string("title",255)->nullable();
             $table->text("content")->nullable();
+            $table->text("description ")->nullable();
             $table->string("image");
             $table->enum("posted",['yes','not'])->default('not');
             $table->timestamps();

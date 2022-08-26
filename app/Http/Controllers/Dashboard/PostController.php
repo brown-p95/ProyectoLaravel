@@ -25,6 +25,9 @@ class PostController extends Controller
      */
     public function create()
     {
+       $categories = Category::get();
+
+       dd($categories);
         echo view ('dashboard.post.create');
     }
 
@@ -36,7 +39,8 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        echo "store";
+        //   echo "asas";
+        dd( $request->all());
     }
 
     /**
